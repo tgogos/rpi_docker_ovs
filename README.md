@@ -116,7 +116,7 @@ docker exec rose ifconfig
 ```bash
 docker network disconnect backend rose
 docker exec rose ifconfig
-docker rm backend
+docker network rm backend
 docker network ls
 ```
 
