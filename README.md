@@ -8,9 +8,8 @@ How to install Docker and OVS (openvswitch) on Raspberry Pi 3
 
 1. Install docker
 --------------
-
- - run `curl -sSL https://get.docker.com | sh`
 ###### (more information can be found here: https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi)
+ - run `curl -sSL https://get.docker.com | sh`
 
 You can then search and pull images from the docker hub: https://hub.docker.com Examples of images tested:
 
