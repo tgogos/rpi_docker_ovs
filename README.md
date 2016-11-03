@@ -57,7 +57,19 @@ ovs-docker add-port ovs-br1 eth1 container2 --ipaddress=173.16.1.3/24
 ```
  - Test the connection between two containers connected via OVS bridge using Ping command
 
+### Reset OVS
+```bash
+#!/bin/bash
+sudo systemctl stop openvswitch
+sudo systemctl disable neutron-openvswitch-agent
 
+sudo systemctl stop openvswitch
+sudo rm -rf /var/log/openvswitch/*
+sudo rm -rf /etc/openvswitch/conf.db
+sudo systemctl start openvswitch
+sudo ovs-vsctl show
+
+```
 
 ---
 
