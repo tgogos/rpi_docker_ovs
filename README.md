@@ -96,9 +96,12 @@ Docker - quick reference
  - remove container: `docker rm container_name`
  - remove all containers: `docker rm $(docker ps -a -q)`
   - maybe you will have to stop all containers first: `docker stop $(docker ps -a -q)`
- 
+
+
+### Possible states
+figure from: [https://docs.docker.com/engine/reference/api/docker_remote_api/](https://docs.docker.com/engine/reference/api/docker_remote_api/)
  ![docker events](event_state.png)
- from: [https://docs.docker.com/engine/reference/api/docker_remote_api/](https://docs.docker.com/engine/reference/api/docker_remote_api/)
+
 
 ## Docker networking
 [https://blog.docker.com/2016/01/webinar-qa-docker-networking/](https://blog.docker.com/2016/01/webinar-qa-docker-networking/)
