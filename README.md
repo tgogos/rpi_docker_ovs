@@ -141,3 +141,20 @@ docker network ls
 
 ## Copy files from host to container
 `docker cp /path/filename container_name:/path/filename`
+
+
+## Expose Docker Remote API
+```bash
+cd /etc/systemd/system/docker.service.d
+# create a file: remote-api.conf
+sudo nano remote-api.conf
+
+# add the following lines (without the #):
+#   [Service]
+#   ExecStart=
+#   ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock
+
+# reloading daemon definitions
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
