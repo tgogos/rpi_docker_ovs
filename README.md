@@ -6,6 +6,10 @@ How to install Docker and OVS (openvswitch) on Raspberry Pi 3
  - Host OS: Raspbian Jessie Lite image (downloaded [2016-09-23-raspbian-jessie-lite.zip](http://director.downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2016-09-28/2016-09-23-raspbian-jessie-lite.zip) from the official site)
  - Docker image: `docker pull resin/rpi-raspbian:jessie-20160831`
 
+### How to prepare your SD card for the Raspberry Pi:
+ - go to https://www.raspberrypi.org/downloads/raspbian/ and download the image
+ - flash your SD card. There are many ways, something like this might help: `sudo ddrescue -D --force 2016-09-23-raspbian-jessie-lite.img /dev/sdb`
+
 1. Install docker
 --------------
 ###### (more information can be found here: https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi)
